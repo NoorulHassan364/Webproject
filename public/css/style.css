@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.home_div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    justify-items: center;
+}
+.main_menu{
+    background-color: #12272e;
+}
+.navbar{
+    color: #fff;
+    background-color: #12272e;
+}
+.navbar a{
+    color: white;
+}
+.navbar-toggler{
+    background-color: rgb(133, 123, 123);
+}
+.navbar li:hover{
+
+border-bottom: 1px solid white;
+}
+
+.home_left{
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.home_right{
+    height: 29rem;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.home_left p{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+.home_left h3{
+    font-size: 1.8rem;
+}
+.weather_word{
+    color: blue;
+}
+.check_btn{
+    /* background-color: rgb(174, 214, 174); */
+    background-color: rgb(206, 60, 60);
+    color: white;
+    margin-top: 20px;
+    align-content: center;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.check_btn:hover{
+    
+  color: black;
+    outline: none;
+    background-color: white;
+    border: 2px solid black;
+   
+}
+.carousel-control-next{
+    background-color: rgb(236, 225, 225);
+    
+}
+.carousel-control-prev{
+    background-color: rgb(236, 225, 225);
+}
+footer{
+    width: 100%;
+    background-color: #12272e;
+margin-top: auto;
+margin-bottom: 0.2px;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    line-height: 2.5rem;
+    font: 1rem;
+    color: #fff;
+}
+
+
+.tempinfo{
+    width: 20rem;
+    /* line-height: 15rem; */
+    margin: auto;
+    background-color: rgb(66, 64, 64);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+font-weight: bold;
+}
+.top_layer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.3rem;
+    
+}
+.middle_layer{
+width: 100%;
+height: 80%;
+display: flex;
+flex-direction: column;
+padding: 5px;
+}
+#city_n{
+  
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* color: rgb(255, 6, 6); */
+    color: rgb(143, 143, 235);
+   
+}
+.bottom_layer{
+    display: flex;
+    justify-content: space-around;
+color: white;
+padding: 10px;
+font-size: 2.3rem;
+}
+#temp_icon{
+    color: rgb(224, 116, 15);
+}
+sup{
+    margin-top: -2rem;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.main_content{
+    width: 60%;
+    position: relative;
+    margin: 3rem auto;
+}
+.main_content input[type="text"]{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #12272e;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    color: white;
+}
+::placeholder{
+    color: rgb(209, 200, 200);
+}
+.main_content input[type="submit"]{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    bottom: 5px;
+    background-color: rgb(107, 107, 221);
+    padding: 2px 15px;
+    border-radius: 10px;
+    /* font-weight: bold; */
+    color: white;
+    outline: none;
+    border: none;
+}
+.main_content input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+
+}
+
+/* responsive code  */
+@media(max-width:768px){
+    .home_left{
+        height: auto;
+        margin-top: 5rem;
+        width: auto;
+    }
+    .home_right{
+        height: auto;
+        margin-top:4rem  ;
+        width: auto;
+    }
+    footer{
+        width:auto;
+    }
+}
+@media(max-width:500px){
+    ::placeholder{
+        color: #12272e;
+    }
+}
